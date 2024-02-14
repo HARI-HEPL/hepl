@@ -64,10 +64,19 @@ public String deletebyname(String username) {
 
      return repo.save(olduser);
 	
-	 
+     //bypass
+
  }
+<<<<<<< HEAD
  //contact postmapping
  public List<user> saveall1(List<user> u){
 		return repo.saveAll(u);
 }
+=======
+ public List<user> findByPass (String no){
+	 return repo.findBypassword(no);
+ }
+ 
+ 
+>>>>>>> cfec6ec4dd5fd0e052f8c9527d50bb363070d52f
 }
