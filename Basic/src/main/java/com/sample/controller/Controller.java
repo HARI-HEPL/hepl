@@ -60,25 +60,10 @@ public Optional<user> putuser (@PathVariable int id,
 	serv.update(id, u);
 	return repo.findById(id);
 }
-<<<<<<< HEAD
-@GetMapping("/users/get")
-public List <user> getusers() {
-	return serv.listall();
-=======
 @GetMapping("/users/bypass/{password}")
 public List<user> bypass (@PathVariable String password){
 	return serv.findByPass(password);
 }
 
 
->>>>>>> cfec6ec4dd5fd0e052f8c9527d50bb363070d52f
 }
-@PostMapping("/users/contact") 
-public String saveuse(@RequestBody List<user> u){ 
-	
-    serv.saveall(u);
-    return "Added Successfully";
-}
-}
-
-
