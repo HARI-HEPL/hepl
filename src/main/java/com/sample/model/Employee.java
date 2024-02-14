@@ -10,6 +10,13 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String email;
+    public String getDepartment() {
+		return department;
+	}
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+	private String department;
 	public String getId() {
 		return id;
 	}
@@ -37,4 +44,6 @@ public class Employee {
 
    
 }
+
+
 
