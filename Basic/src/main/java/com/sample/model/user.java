@@ -15,6 +15,28 @@ public class user {
 	private Address address;
 	private LocalDate date;
 <<<<<<< HEAD
+	private long phno;
+	
+
+
+	public Long getPhno() {
+		return phno;
+	}
+
+
+
+
+
+	public void setPhno(Long phno) {
+		this.phno = phno;
+	}
+
+
+
+
+
+=======
+<<<<<<< HEAD
 	private String email;
 
 	public String getEmail() {
@@ -30,6 +52,7 @@ public class user {
 		this.contactnumber = contactnumber;
 	}
 
+>>>>>>> d6b090da04893984edf1ed7cb422ac3f8e11a50c
 	/*public user() {
 		super();
 		// TODO Auto-generated constructor stub

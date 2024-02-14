@@ -15,8 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.sample.model.user;
 import com.sample.repository.repository;
+<<<<<<< HEAD
 import com.sample.service.service;
 import org.springframework.web.bind.annotation.RequestParam;
+
+=======
+import com.sample.service.service;
+import org.springframework.web.bind.annotation.RequestParam;
+>>>>>>> d6b090da04893984edf1ed7cb422ac3f8e11a50c
 
 @RestController
 @RequestMapping("/api/user")
@@ -26,6 +32,23 @@ public class Controller {
 	private repository repo;
 	@Autowired
 	private service serv;
+<<<<<<< HEAD
+	
+	@GetMapping("/users/phno/{phno}")
+	public List<user> getByphno(@PathVariable long phno){
+		return serv.getByphno(phno);
+	}
+	
+	
+	
+	
+	
+@GetMapping("/users")
+public List <user> getuser() {
+	return serv.listall();
+}
+=======
+>>>>>>> d6b090da04893984edf1ed7cb422ac3f8e11a50c
 
 	@GetMapping("/users")
 	public List<user> getuser() {
@@ -79,5 +102,7 @@ public List<user> bypass (@PathVariable String password){
 	public List<user> findByEmail(@PathVariable String email) {
 		return repo.findByEmail(email);
 	}
+
+
 
 }
