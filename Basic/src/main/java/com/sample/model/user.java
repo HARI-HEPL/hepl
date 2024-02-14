@@ -16,8 +16,16 @@ public class user {
 	private String password;
 	private Address address;
 	private LocalDate date;
+	private long contactnumber;
 	
-	
+	public long getContactnumber() {
+		return contactnumber;
+	}
+
+	public void setContactnumber(int contactnumber) {
+		this.contactnumber = contactnumber;
+	}
+
 	/*public user() {
 		super();
 		// TODO Auto-generated constructor stub

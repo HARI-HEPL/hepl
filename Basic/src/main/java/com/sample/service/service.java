@@ -22,9 +22,6 @@ public List <user> listall(){
 }
 //post
 public List<user> saveall(List<user> u){
-	
-       
-   
 	return repo.saveAll(u);
 
 }
@@ -69,4 +66,8 @@ public String deletebyname(String username) {
 	
 	 
  }
+ //contact postmapping
+ public List<user> saveall1(List<user> u){
+		return repo.saveAll(u);
+}
 }

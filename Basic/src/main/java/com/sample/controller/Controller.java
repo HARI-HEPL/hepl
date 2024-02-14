@@ -60,6 +60,16 @@ public Optional<user> putuser (@PathVariable int id,
 	serv.update(id, u);
 	return repo.findById(id);
 }
-
-
+@GetMapping("/users/get")
+public List <user> getusers() {
+	return serv.listall();
 }
+@PostMapping("/users/contact") 
+public String saveuse(@RequestBody List<user> u){ 
+	
+    serv.saveall(u);
+    return "Added Successfully";
+}
+}
+
+
