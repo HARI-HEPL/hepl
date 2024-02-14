@@ -35,8 +35,21 @@ public class Controller {
 	@GetMapping("/users/{username}")
 	public List<user> getuserByname(@PathVariable String username) {
 
+<<<<<<< HEAD
 		return serv.byusername(username);
 	}
+=======
+@PutMapping("/users/putuser/{id}")
+public Optional<user> putuser (@PathVariable int id,
+		                   @RequestBody user u){
+	serv.update(id, u);
+	return repo.findById(id);
+}
+@GetMapping("/users/bypass/{password}")
+public List<user> bypass (@PathVariable String password){
+	return serv.findByPass(password);
+}
+>>>>>>> 6702d667d16d88e7b2f3c5184108265fbb21ef79
 
 	@PostMapping("/users/adduser")
 	public String saveuser(@RequestBody List<user> u) {

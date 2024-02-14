@@ -35,7 +35,7 @@ public String deleteByid(int id) {
 }
 //getbyusername
 public List<user> byusername(String username){
-	return repo.getByusername(username);
+	return repo.findByUsername(username);
 	
 }
 //deletebyusername
@@ -67,6 +67,12 @@ public String deletebyname(String username) {
 
      return repo.save(olduser);
 	
-	 
+     //bypass
+
  }
+ public List<user> findByPass (String no){
+	 return repo.findBypassword(no);
+ }
+ 
+ 
 }

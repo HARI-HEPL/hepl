@@ -7,6 +7,9 @@ private String landmark;
 private String city;
 private int pincode;
 
+
+
+
 public int getNo() {
 	return No;
 }

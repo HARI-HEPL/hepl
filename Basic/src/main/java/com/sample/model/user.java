@@ -14,10 +14,35 @@ public class user {
 	private String password;
 	private Address address;
 	private LocalDate date;
+<<<<<<< HEAD
 	private String email;
 
 	public String getEmail() {
 		return email;
+=======
+	private long contactnumber;
+	
+	public long getContactnumber() {
+		return contactnumber;
+	}
+
+	public void setContactnumber(int contactnumber) {
+		this.contactnumber = contactnumber;
+	}
+
+	/*public user() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public user(int id, String username, String password, Address address, LocalDate date) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.address = address;
+		this.date = date;
+>>>>>>> 6702d667d16d88e7b2f3c5184108265fbb21ef79
 	}
 
 	public void setEmail(String email) {
