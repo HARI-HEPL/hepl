@@ -10,6 +10,13 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String email;
+    private String employeeName;
+	public String getEmployeeName() {
+		return employeeName;
+	}
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
 	public String getId() {
 		return id;
 	}
