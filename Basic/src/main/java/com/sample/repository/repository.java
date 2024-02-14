@@ -12,12 +12,12 @@ public interface repository extends MongoRepository<user, Integer> {
 
 	public String deleteByUsername(String username);
 
-<<<<<<< HEAD
-	public List<user> getByusername(String username);
+
+	
 
 	public List<user> findByEmail(String email);
 
-=======
+
 	public List<user> findBypassword(String password);
->>>>>>> 6702d667d16d88e7b2f3c5184108265fbb21ef79
+
 }

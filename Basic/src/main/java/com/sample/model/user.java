@@ -14,12 +14,12 @@ public class user {
 	private String password;
 	private Address address;
 	private LocalDate date;
-<<<<<<< HEAD
+
 	private String email;
 
 	public String getEmail() {
 		return email;
-=======
+	}
 	private long contactnumber;
 	
 	public long getContactnumber() {
