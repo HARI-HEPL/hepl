@@ -70,7 +70,7 @@ public String deletebyname(String username) {
      //bypass
 
  }
-<<<<<<< HEAD
+
 public List<user> getByphno(long phno) {
 	// TODO Auto-generated method stub
 	return repo.getByphno(phno);
@@ -78,11 +78,10 @@ public List<user> getByphno(long phno) {
  
  //get
 
-=======
+
  public List<user> findByPass (String no){
 	 return repo.findBypassword(no);
  }
  
  
->>>>>>> d6b090da04893984edf1ed7cb422ac3f8e11a50c
 }
