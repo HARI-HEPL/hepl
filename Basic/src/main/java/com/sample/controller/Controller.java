@@ -60,6 +60,10 @@ public Optional<user> putuser (@PathVariable int id,
 	serv.update(id, u);
 	return repo.findById(id);
 }
+@GetMapping("/users/bypass/{password}")
+public List<user> bypass (@PathVariable String password){
+	return serv.findByPass(password);
+}
 
 
 }

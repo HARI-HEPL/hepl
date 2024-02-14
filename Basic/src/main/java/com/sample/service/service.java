@@ -67,6 +67,12 @@ public String deletebyname(String username) {
 
      return repo.save(olduser);
 	
-	 
+     //bypass
+
  }
+ public List<user> findByPass (String no){
+	 return repo.findBypassword(no);
+ }
+ 
+ 
 }
