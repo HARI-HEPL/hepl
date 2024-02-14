@@ -22,6 +22,9 @@ public List <user> listall(){
 }
 //post
 public List<user> saveall(List<user> u){
+	
+       
+   
 	return repo.saveAll(u);
 
 }
@@ -32,7 +35,7 @@ public String deleteByid(int id) {
 }
 //getbyusername
 public List<user> byusername(String username){
-	return repo.getByusername(username);
+	return repo.findByUsername(username);
 	
 }
 //deletebyusername
@@ -67,16 +70,9 @@ public String deletebyname(String username) {
      //bypass
 
  }
-<<<<<<< HEAD
- //contact postmapping
- public List<user> saveall1(List<user> u){
-		return repo.saveAll(u);
-}
-=======
  public List<user> findByPass (String no){
 	 return repo.findBypassword(no);
  }
  
  
->>>>>>> cfec6ec4dd5fd0e052f8c9527d50bb363070d52f
 }
