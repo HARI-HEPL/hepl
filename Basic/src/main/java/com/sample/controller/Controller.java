@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.sample.model.user;
 import com.sample.repository.repository;
 import com.sample.service.service;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 @RequestMapping("/api/user")
@@ -26,6 +28,15 @@ public class Controller {
 	private repository repo;
 	@Autowired
 	private service serv;
+	
+	@GetMapping("/users/phno/{phno}")
+	public List<user> getByphno(@PathVariable long phno){
+		return serv.getByphno(phno);
+	}
+	
+	
+	
+	
 	
 @GetMapping("/users")
 public List <user> getuser() {
@@ -60,6 +71,8 @@ public Optional<user> putuser (@PathVariable int id,
 	serv.update(id, u);
 	return repo.findById(id);
 }
+
+
 
 
 }

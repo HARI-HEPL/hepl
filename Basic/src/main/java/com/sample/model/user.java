@@ -16,8 +16,26 @@ public class user {
 	private String password;
 	private Address address;
 	private LocalDate date;
+	private long phno;
 	
-	
+
+
+	public Long getPhno() {
+		return phno;
+	}
+
+
+
+
+
+	public void setPhno(Long phno) {
+		this.phno = phno;
+	}
+
+
+
+
+
 	/*public user() {
 		super();
 		// TODO Auto-generated constructor stub

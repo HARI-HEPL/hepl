@@ -69,4 +69,11 @@ public String deletebyname(String username) {
 	
 	 
  }
+public List<user> getByphno(long phno) {
+	// TODO Auto-generated method stub
+	return repo.getByphno(phno);
+}
+ 
+ //get
+
 }
